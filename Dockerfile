@@ -2,7 +2,7 @@ ARG CUDA="11.3.1"
 ARG UBUNTU="18.04"
 ARG ARCH=""
 
-FROM nvidia/cuda${ARCH}:${CUDA}-devel-ubuntu${UBUNTU}
+FROM nvidia/cuda${ARCH}:${CUDA}-cudnn8-devel-ubuntu${UBUNTU}
 
 ARG NVIDIA_DISTRO="ubuntu1804/x86_64"
 ARG OPENCV="3.4.14"
